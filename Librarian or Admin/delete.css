@@ -1,0 +1,36 @@
+body
+{
+    font-size: 25px;
+    font-family: Forte;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSseq_7592CLnG4tbxzxVxhCtiGlaRd48t3wA&usqp=CAU);
+    background-size: cover;
+}
+h3{
+    font-size: 40px;
+    font-family:Forte;
+}
+bg{
+    background-color: aqua;
+}
+input{
+    font-size:15px;
+    text-align:center;
+    height:30px; 
+}
+button {
+    font-size: 15px;
+    background-color: #ddd;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+button:hover {
+    background-color: #4178ac;
+  }

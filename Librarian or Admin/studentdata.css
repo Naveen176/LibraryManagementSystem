@@ -1,0 +1,47 @@
+body
+{
+    font-size: 25px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeCXfP_Dc3fkZ1uz1dVJANxIE0U7byl7TTCg&usqp=CAU);
+    background-position:100% 100%;
+    background-size: cover;
+}
+h3{
+    font-size: 40px;
+    font-family:Forte;
+}
+bg{
+    font-size: 42px;
+    background-color: aqua;
+    font-family: Forte;
+}
+input{
+    font-size:15px;
+    text-align:center;
+    height:30px; 
+}
+button {
+    font-size: 15px;
+    background-color: #ddd;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+button:hover {
+    background-color: #4178ac;
+  }
+p{
+    font-family: Forte;
+    font-size: 30px;
+    text-align: center;
+}
+td
+{
+    font-family:"Open Sans", sans-serif;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Books</title>
+    </head>
+    <link rel="stylesheet" href="AddBooks.css"/>
+    <body><center>
+        <hr><bg>Only Admin Should Add Books</bg><hr><h3>Welcome to the Library</h3>
+        <form action="Add.php" method='post'>
+            <table><h3>
+                <tr>
+                    <td>
+                        Book Id <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="bid" id="bid" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Author <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="author" id="author" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Title <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="title" id="title" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Publisher <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="publisher" id="publisher" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cost <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="cost" id="cost" required><br><br>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="submit" name="submit">Add</button>
+        </form></center>
+    </body>
+</html>

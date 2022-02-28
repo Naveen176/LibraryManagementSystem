@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="register.css"/>
+
+</head>
+<body>
+    
+    <center>    
+        <h1>Register Here</h1>
+    </center>
+    <form action="register.php" method='post' onsubmit="return validate()" ><center>
+        <fieldset>
+            <legend>REGISTER</legend><center>
+                <table>
+                    <tr><br><br>
+                        <td>
+                            Jntu No :
+                        </td>
+                        <td>
+                            <input type="text" name="jntu" id="jntu" >
+                            <p id="jntuno_p" style="display: none; color: red;">Please enter your JNTU Number correctly.</p>
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Student Name :
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" >
+                    <p id="name_p" style="display: none; color: red;">Please enter your Name correctly.</p>
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-Mail :
+                </td>
+                <td>
+                    <input type="text" name="email" id="email" >
+                    <p id="email_p" style="display: none; color: red;">Please enter your Mail ID correctly.</p><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Contact :
+                </td>
+                <td>
+                    <input type="number" name="phone" id="phone" min="6000000000" max="9999999999">
+                    <p id="phone_p" style="display: none; color: red;">Please enter your Mobile Number correctly.</p><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password :
+                </td>
+                <td>
+                    <input type="password" name="pass1" id="pass" >
+                    <p id="pass_p" style="display: none; color: red;">Please enter only Alphabets and Special Characters and Number for password.</p>    
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Confirm Password :
+                </td>
+                <td>
+                    <input type="password" name="pass2" id="cpass" >
+                    <p id="cpass_p" style="display: none; color: red;">Password and Confirm password must match.</p><br><br>
+                </td>
+            </tr>
+        </table><br><br>
+      <button type='submit'  id='submit' name='submit'>Register</button></center>
+    </fieldset></center>
+</form>
+    <script type="text/javascript">
+        function validate()
+        {
+            // Value Retrieving
+            var jntu  = document.getElementById("jntu").value;
+            var name  = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var pass = document.getElementById("pass").value;
+            var cpass = document.getElementById("cpass").value;
+
+            //Regular expressions
+            var jntu_regex = /[12][0-9]34[15]A[01][0-9A-Za-z]{3}/;
+            var name_regex = /[A-Za-z\.]{1,15}/;
+            var email_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var phone_regex = /[789][0-9]{9}/;
+            var pwd_regex = /[A-Za-z0-9@\*\.]/;
+
+            var flag = 0;
+
+            //Validations
+            if(jntu_regex.test(jntu)) { 
+                document.getElementById("jntuno_p").style.display = 'none';
+            } else {
+                document.getElementById("jntuno_p").style.display = 'inline-block';
+                flag = 1;
+            }
+
+            if(name_regex.test(name)) { 
+                document.getElementById("name_p").style.display = 'none';
+            } else {
+                document.getElementById("name_p").style.display = 'inline-block';
+                flag = 1;
+            }
+
+            if(email_regex.test(email)) { 
+                document.getElementById("email_p").style.display = 'none';
+            } else {
+                document.getElementById("email_p").style.display = 'inline-block';
+                flag = 1;
+            }
+
+            if(phone_regex.test(phone)) { 
+                document.getElementById("phone_p").style.display = 'none';
+            } else {
+                document.getElementById("phone_p").style.display = 'inline-block';
+                flag = 1;
+            }
+
+            if(pwd_regex.test(pass) || !(pass == '')) {
+                document.getElementById("pass_p").style.display = 'none';
+            } else {
+                document.getElementById("pass_p").style.display = 'inline-block';
+                flag = 1;
+            }
+
+            if(cpass == pass) {
+                document.getElementById("pass_p").style.display = 'none';
+            } else {
+                document.getElementById("pass_p").style.display = 'inline-block';
+                flag = 1;
+            }
+
+            if(flag == 1) {
+                return false;
+            }        
+            return true;    
+        }
+    </script>
+</body>
+</html>

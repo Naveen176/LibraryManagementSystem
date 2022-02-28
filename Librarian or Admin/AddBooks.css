@@ -1,0 +1,36 @@
+body
+{
+    font-size: 25px;
+    font-family: Forte;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/326/334/non_2x/gradient-light-color-background-graphic-free-vector.jpg);
+    background-attachment: fixed;
+}
+h3{
+    font-size: 40px;
+    font-family:Forte;
+}
+bg{
+    background-color: aqua;
+}
+input{
+    font-size:15px;
+    text-align:center;
+    height:30px; 
+}
+button {
+    font-size: 15px;
+    background-color: #ddd;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+button:hover {
+    background-color: #4178ac;
+  }

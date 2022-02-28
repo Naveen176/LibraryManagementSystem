@@ -1,0 +1,14 @@
+p{
+    text-align: center;
+    background-color: aqua;
+    font-size: 40px;
+    font-family: Forte;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNTKb6_9822S12MCBXKMzarjWpoexNQBXJA&usqp=CAU);
+    background-attachment: fixed;
+}
+td
+{
+    font-family: "Open Sans", sans-serif;
+}

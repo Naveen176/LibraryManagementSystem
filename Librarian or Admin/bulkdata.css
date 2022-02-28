@@ -1,0 +1,12 @@
+body{
+    background-image: url(https://cdn.dribbble.com/users/3684910/screenshots/7066872/media/465a42206c5f77765b0dd1c86eb20be6.gif);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+}
+p{
+    font-family: Forte;
+    font-size: 30px;
+    background-color: aqua;
+}

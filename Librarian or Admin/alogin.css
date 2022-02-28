@@ -1,0 +1,38 @@
+input{
+    font-size:15px;
+    text-align:center;
+    height:20px; 
+}
+body{
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/946/670/small/abstract-template-grey-geometric-shine-and-layer-background-with-light-blue-effect-technology-style-free-vector.jpg);
+    background-position:100% 100%;
+    background-size: 100% 100%;
+    font-family: "Open Sans", sans-serif;
+}
+fieldset{
+    width: 350px;
+    height:250px;
+}
+button {
+    background-color: #ddd;
+    border: none;
+    color: rgba(5, 5, 5, 0.685);
+    padding: 13px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+  }
+button:hover
+{
+    background-color: #13dddd;
+  }
+p{
+    font-size: 40px;
+    background-color: aqua;
+}

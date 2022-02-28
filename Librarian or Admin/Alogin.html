@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Admin Login</title>
+         <script type="text/javascript">
+            function validate()
+            {
+                var admin  = document.getElementById("admin").value;
+                var regx1 = /AD0/;
+
+                if (regx1.test(admin)) 
+                {
+                    return true;
+                }
+                else
+                {
+                    alert("Invalid Admin Id");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <link rel="stylesheet" href="alogin.css"/>
+    <body><br><br><center><br>
+        <p style="font-family: Forte;">Admin can login here</p>
+        <form action="alogin.php" method='POST' onsubmit="return validate()">
+            <fieldset>
+                <table>
+                    <legend>Admin Login<legend>
+                    <tr>
+                        <td>
+                            <br><br><br>Admin Id:<br><br>
+                        </td>
+                        <td>
+                            <br><br><br><input type="text" name="admin" id="admin" ><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password:<br>
+                        </td>
+                        <td>
+                            <input type="password" name="pass" id="pass"><br>
+                        </td>
+                    </tr>
+                </table><br><br>
+                <button type="submit" id="submit" name="submit">sign in</button>
+            </fieldset> 
+        </form></center>
+
+    </body>
+</html>

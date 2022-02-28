@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Books</title>
+    </head>
+    <link rel="stylesheet" href="delete.css"/>
+    <body><center>
+        <br><hr><bg>Only Admin Should Delete Books</bg><hr><h3>Welcome to the Library</h3>
+        <form action="Delete.php" method='post'>
+            <table><h3>
+                <tr>
+                    <td>
+                        Book Id <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="bid" id="bid" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Title <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="title" id="title" ><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Author <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="author" id="author" ><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Publisher <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="publisher" id="publisher"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cost <br><br>
+                    </td>
+                    <td>
+                        <input type="text" name="cost" id="cost"><br><br>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="submit" name="submit">Delete</button>
+        </form></center>
+    </body>
+</html>
